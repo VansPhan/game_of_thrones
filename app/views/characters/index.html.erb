@@ -1,0 +1,9 @@
+<div class="container">
+	<% @characters.each do |character| %>
+		<div class="item">
+			<h3 class="offset"><%= link_to "House #{character.house.name}", house_path(character.house.id) %></h3>
+			<h1><%= link_to character.name, character_path(character.id) %></h1>
+			<img src="<%= character.img_url %>" width="400px" height="auto">
+		</div>
+	<% end %>
+</div>

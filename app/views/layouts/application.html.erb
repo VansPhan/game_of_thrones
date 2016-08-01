@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameOfThrones</title>
+    <title>Game Of Thrones</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,12 @@
   </head>
 
   <body>
+   	<nav>
+	    <ul>
+	      <li><%= link_to "Characters", characters_path %></li>
+	      <li><%= link_to "Houses", houses_path %></li>
+	    </ul>
+  	</nav>
     <%= yield %>
   </body>
 </html>

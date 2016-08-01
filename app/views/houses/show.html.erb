@@ -1,0 +1,9 @@
+<div class="item">
+	<h1>House <%= @house.name %></h1>
+	<h3>Members:</h3>
+	<ul>
+	<% @house.characters.each do |character| %>
+		<li><%= link_to character.name, character_path(character.id) %></li>
+	<% end %>
+	</ul>
+</div>
