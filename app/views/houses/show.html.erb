@@ -1,4 +1,7 @@
 <div class="item">
+	<p class="offset"><%= link_to 'Edit', edit_house_path(@house) %> <%= link_to 'Delete', @house,
+    	method: :delete,
+    	data: { confirm: 'Are you sure you want to delete?' } %></p>
 	<h1>House <%= @house.name %></h1>
 	<h3>Members:</h3>
 	<ul>

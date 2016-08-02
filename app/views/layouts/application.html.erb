@@ -15,6 +15,9 @@
 	      <li><%= link_to "Houses", houses_path %></li>
 	    </ul>
   	</nav>
+    <% flash.each do |type, message| %>
+      <p class="flash <%= type %>"><%= message %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

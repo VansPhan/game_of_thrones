@@ -1,12 +1,16 @@
-<div class="container">
-	<% @houses.each do |house| %>
-		<h1>House <%= house.name %></h1>
+	<h1><%= link_to "| Houses | + |", new_house_path %></h1>
+<hr>
+<% @houses.each do |house| %>
+	<div class="item">
+		<p class="offset"><%= link_to 'Edit', edit_house_path(house) %> <%= link_to 'Delete', house,
+        	method: :delete,
+        	data: { confirm: 'Are you sure you want to delete?' } %></p>
+		<h1><%= link_to "House #{ house.name }", house_path(house.id) %></h1>
 		<h3>Members:</h3>
 		<ul>
 		<% house.characters.each do |character| %>
 			<li><%= link_to character.name, character_path(character.id) %></li>
 		<% end %>
 		</ul>
-		<hr>
-	<% end %>
-</div>
+	</div>
+<% end %>

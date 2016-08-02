@@ -6,7 +6,8 @@ nav ul {
     background-color: #333;
 }
 
-a {
+a, li {
+    display: block;
     text-decoration: none;
 }
 
@@ -54,3 +55,14 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.flash {
+  border: 1px solid black;
+  padding: 1em;
+  background: #eee;
+  text-align: center;
+}
+
+.alert  { color: red;  }
+.notice { color: blue; }
+
