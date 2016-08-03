@@ -1,5 +1,6 @@
-	<h1><%= link_to "| Houses | + |", new_house_path %></h1>
+<h1 class="item container"><%= link_to "| Houses | + |", new_house_path %></h1>
 <hr>
+<div class="container">
 <% @houses.each do |house| %>
 	<div class="item">
 		<p class="offset"><%= link_to 'Edit', edit_house_path(house) %> <%= link_to 'Delete', house,
@@ -14,3 +15,4 @@
 		</ul>
 	</div>
 <% end %>
+</div>

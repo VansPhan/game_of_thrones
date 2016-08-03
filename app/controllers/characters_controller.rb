@@ -5,6 +5,7 @@ class CharactersController < ApplicationController
 	end
 
 	def show
+		@traits = @character.traits
 	end
 
 	def edit

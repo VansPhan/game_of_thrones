@@ -1,3 +1,8 @@
+html {
+    background: url("bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -41,11 +46,49 @@ nav {
 }
 
 .item {
+    background-color: #333;
+    opacity: .9;
     margin: 0 auto;
     margin-bottom: 25px;
     margin-top: 50px;
     padding: 20px;
     width: 500px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+a > img {
+    background-color: #333;
+    opacity: .9;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 800px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.form-item {
+    margin: 30px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+.form {
+    background-color: #333;
+    opacity: .9;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 50px;
+    width: 800px;
     border: 2px solid black;
 }
 
@@ -65,4 +108,8 @@ nav {
 
 .alert  { color: red;  }
 .notice { color: blue; }
+
+p, h1, h3, a, label {
+    color: white;
+}
 

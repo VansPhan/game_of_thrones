@@ -9,6 +9,6 @@
 	  <%= f.label :house_id %>
 	  <%= f.select :house_id, options_for_select(House.all.map{ |i| [i.name, i.id] }) %>
 
-	  <%= f.submit %>
+	  <%= f.submit "Submit", :class => "offset" %>
 	<% end %>
 </div>

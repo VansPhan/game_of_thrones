@@ -1,0 +1,2 @@
+module Character::TraitsHelper
+end

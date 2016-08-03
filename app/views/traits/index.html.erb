@@ -1,0 +1,9 @@
+<div class="item">
+	<h1><%= @character.name %></h1>
+	<h3><%= link_to "| Traits | + |", new_character_trait_path(@character) %></h3>
+	<% @traits.each do |trait| %>
+		<p><%= trait.description %><%= link_to 'Delete', character_trait_path(@character, trait),
+    	method: :delete,
+    	data: { confirm: 'Are you sure you want to delete?' } %></p>
+	<% end %>
+</div>

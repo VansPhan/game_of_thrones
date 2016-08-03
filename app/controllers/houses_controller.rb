@@ -1,5 +1,5 @@
 class HousesController < ApplicationController
-	before_action :set_character, only: [:show, :destroy, :update, :edit]
+	before_action :set_house, only: [:show, :destroy, :update, :edit]
 	def index
 		@houses = House.all
 	end
@@ -35,7 +35,7 @@ class HousesController < ApplicationController
 		params.require(:house).permit(:name)
 	end
 
-	def set_character
+	def set_house
 		@house = House.find(params[:id])
 	end
 
